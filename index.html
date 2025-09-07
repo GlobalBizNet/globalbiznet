@@ -39,7 +39,7 @@
                 <img src="globalbiznet.png" alt="Logo GlobalBizNet" class="hero-logo">
                 <h1>Transformación Digital<br>para la Experiencia del Cliente</h1>
                 <p>Integramos tecnología, automatización e inteligencia artificial para optimizar tus procesos y potenciar tu negocio. Con presencia en Latinoamérica y el Caribe.</p>
-                <a href="#" class="cta-button" id="open-form-button">Solicitar Asesoría</a>
+                <a href="form.html" class="cta-button" target="_blank">Solicitar Asesoría</a>
             </div>
         </section>
         
@@ -88,48 +88,6 @@
             </div>
         </div>
     </footer>
-
-    <div id="contact-modal" class="modal-overlay">
-        <div class="modal-content">
-            <button id="close-form-button" class="close-button">&times;</button>
-            <h3>Solicitar Asesoría</h3>
-            <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
-                <div class="form-row">
-                    <input type="text" name="Nombre" placeholder="Nombre *" required>
-                    <input type="text" name="Apellido" placeholder="Apellido *" required>
-                </div>
-                <input type="email" name="Correo electrónico" placeholder="Correo electrónico *" required>
-                <div class="form-row">
-                    <input type="tel" name="Número de teléfono" placeholder="Número de teléfono *" required>
-                    <input type="text" name="Empresa" placeholder="Empresa *" required>
-                </div>
-                <div class="form-row">
-                    <input type="text" name="Cargo" placeholder="Cargo *" required>
-                    <select name="País" required>
-                        <option value="" disabled selected>País *</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Mexico">México</option>
-                        <option value="Peru">Perú</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
-                <select name="Industria" required>
-                    <option value="" disabled selected>Industria *</option>
-                    <option value="Tecnologia">Tecnología</option>
-                    <option value="Finanzas">Finanzas</option>
-                    <option value="Salud">Salud</option>
-                    <option value="Retail">Retail</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <textarea name="Comentario" placeholder="¿Tiene algún comentario adicional? *" required></textarea>
-                <div class="form-consent">
-                    <input type="checkbox" id="consent" name="consent" required>
-                    <label for="consent">Autorizo recibir información relevante, incluyendo el uso de mis datos personales por parte de GlobalBizNet con fines de comunicación.</label>
-                </div>
-                <button type="submit" class="submit-button">ENVIAR MENSAJE</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
