@@ -1,146 +1,246 @@
-/* ======== ESTILOS GENERALES ======== */
+/* ======== 1. VARIABLES Y ESTILOS GLOBALES ======== */
+:root {
+    --primary-blue: #0d47a1;  /* Azul oscuro del logo */
+    --secondary-blue: #1565c0; /* Azul intermedio */
+    --accent-blue: #42a5f5;   /* Azul claro */
+    --dark-bg: #1a1a1a;      /* Fondo oscuro para contraste */
+    --light-bg: #f4f7f6;     /* Fondo claro para secciones */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --font-main: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-main);
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
-}
-
-/* ======== ENCABEZADO Y LOGO ======== */
-header {
-    background-color: #ffffff;
-    padding: 10px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-#logo {
-    width: 60px; /* Ajusta el tamaño del logo si es necesario */
-    height: auto;
-}
-
-header h1 {
-    font-size: 1.8em;
-    color: #0d47a1; /* Azul oscuro del logo */
-    margin: 0;
-}
-
-/* ======== CONTENIDO PRINCIPAL Y SECCIONES ======== */
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-section {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-section h3 {
-    color: #1565c0; /* Azul intermedio del logo */
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 10px;
-    margin-top: 0;
-}
-
-/* ======== SECCIÓN PRINCIPAL (HERO) ======== */
-#hero {
-    text-align: center;
-    background-color: #0d47a1; /* Azul oscuro */
-    color: #ffffff;
-}
-
-#hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-/* ======== SECCIÓN DE SERVICIOS ======== */
-.servicios-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap; /* Para que se ajuste en móviles */
-}
-
-.servicio {
-    flex-basis: calc(33.333% - 20px); /* Base para 3 columnas */
-    box-sizing: border-box;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-left: 4px solid #1976d2; /* Acento azul */
-    border-radius: 5px;
-}
-
-/* ======== LISTAS DE BENEFICIOS Y SERVICIOS ======== */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24" width="24" fill="%231976d2"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
-    background-size: 20px;
-    padding-left: 30px;
-    margin-bottom: 10px;
+    background-color: var(--text-light);
+    color: var(--text-dark);
     line-height: 1.6;
 }
 
-/* ======== PIE DE PÁGINA (FOOTER) ======== */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-footer a {
-    color: #42a5f5; /* Azul claro para el enlace */
+/* ======== 2. BARRA DE NAVEGACIÓN (NAVBAR) ======== */
+.navbar {
+    background-color: var(--text-light);
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+    position: relative; /* Para el menú desplegable */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-blue);
+}
+
+/* Menú Desplegable */
+.dropdown-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 280px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block; /* Se muestra al pasar el cursor */
+}
+.dropdown-menu li {
+    margin: 0;
+}
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+/* ======== 3. SECCIÓN PRINCIPAL (HERO) ======== */
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    text-align: center;
+    padding: 200px 0 150px 0;
+    margin-top: 70px; /* Ajuste para la navbar fija */
+}
+
+#hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.cta-button {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-blue);
+}
+
+/* ======== 4. SECCIONES DE CONTENIDO GENERAL ======== */
+.content-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--primary-blue);
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+/* ======== 5. SECCIÓN DE SERVICIOS ======== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+    font-size: 3em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+/* ======== 6. SECCIÓN DE BENEFICIOS ======== */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.benefit-item {
+    text-align: center;
+}
+
+.benefit-icon {
+    font-size: 2.5em;
+    color: var(--secondary-blue);
+    margin-bottom: 15px;
+}
+
+/* ======== 7. PIE DE PÁGINA (FOOTER) ======== */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    padding: 60px 0 20px 0;
+    text-align: center;
+}
+
+footer h2 {
+    color: var(--text-light);
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--accent-blue);
+}
+
+.contact-info a {
+    color: var(--text-light);
     text-decoration: none;
 }
-
-footer a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
 
-/* ======== ESTILOS BOTÓN DE WHATSAPP ======== */
-#whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366; /* Color oficial de WhatsApp */
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; /* Para hacerlo redondo */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Para que esté por encima de todo */
-    transition: transform 0.3s ease;
-}
-
-#whatsapp-button:hover {
-    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
-}
-
-
-/* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
-@media (max-width: 768px) {
-    .servicios-container {
-        flex-direction: column;
-    }
-
-    header {
-        flex-direction: column;
-        padding: 20px;
-    }
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #aaa;
 }
