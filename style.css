@@ -112,8 +112,8 @@ body {
 }
 
 .hero-logo {
-    width: 400px !important; /* <--- TAMAÑO FINAL DEL LOGO */
-    margin-bottom: 20px;
+    width: 400px !important; 
+    margin-bottom: 6px; /* <--- DISTANCIA REDUCIDA EN UN 70% (de 20px a 6px) */
 }
 
 #hero h1 { font-size: 3em; margin-bottom: 20px; }
