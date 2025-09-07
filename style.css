@@ -1,0 +1,124 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* ======== ENCABEZADO Y LOGO ======== */
+header {
+    background-color: #ffffff;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#logo {
+    width: 60px; /* Ajusta el tamaño del logo si es necesario */
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #0d47a1; /* Azul oscuro del logo */
+    margin: 0;
+}
+
+/* ======== CONTENIDO PRINCIPAL Y SECCIONES ======== */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+section h3 {
+    color: #1565c0; /* Azul intermedio del logo */
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* ======== SECCIÓN PRINCIPAL (HERO) ======== */
+#hero {
+    text-align: center;
+    background-color: #0d47a1; /* Azul oscuro */
+    color: #ffffff;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* ======== SECCIÓN DE SERVICIOS ======== */
+.servicios-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que se ajuste en móviles */
+}
+
+.servicio {
+    flex-basis: calc(33.333% - 20px); /* Base para 3 columnas */
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #1976d2; /* Acento azul */
+    border-radius: 5px;
+}
+
+/* ======== LISTAS DE BENEFICIOS Y SERVICIOS ======== */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="%231976d2"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* ======== PIE DE PÁGINA (FOOTER) ======== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #42a5f5; /* Azul claro para el enlace */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
+@media (max-width: 768px) {
+    .servicios-container {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
