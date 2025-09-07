@@ -20,6 +20,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Agregar el botón al cuerpo del documento
     document.body.appendChild(whatsappButton);
-
-    // En el futuro, se podría agregar aquí código para un menú móvil, etc.
 });
