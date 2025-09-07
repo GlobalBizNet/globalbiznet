@@ -33,7 +33,7 @@ body {
 .navbar {
     background-color: var(--text-light);
     border-bottom: 1px solid #e0e0e0;
-    padding: 15px 0;
+    padding: 10px 0; /* <-- VALOR AJUSTADO */
     position: fixed;
     width: 100%;
     top: 0;
@@ -53,12 +53,12 @@ body {
     text-decoration: none;
     color: var(--primary-blue);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em; /* <-- VALOR AJUSTADO */
 }
 
 .logo img {
-    width: 40px;
-    margin-right: 10px;
+    width: 30px; /* <-- VALOR AJUSTADO */
+    margin-right: 8px; /* <-- VALOR AJUSTADO */
 }
 
 .nav-menu {
@@ -119,7 +119,7 @@ body {
     color: var(--text-light);
     text-align: center;
     padding: 200px 0 150px 0;
-    margin-top: 70px; /* Ajuste para la navbar fija */
+    margin-top: 50px; /* <-- VALOR AJUSTADO */
 }
 
 #hero h1 {
