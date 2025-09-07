@@ -107,7 +107,7 @@ body {
     background-position: center;
     color: var(--text-light);
     text-align: center;
-    padding: 80px 0 100px 0; /* <--- ALTURA AJUSTADA */
+    padding: 40px 0 100px 0; /* <--- ALTURA AJUSTADA */
     margin-top: 60px;
 }
 
