@@ -12,9 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     whatsappButton.target = '_blank';
     whatsappButton.id = 'whatsapp-button';
     
-    // --- CAMBIO IMPORTANTE ---
-    // Ahora usamos una etiqueta <img> para mostrar tu imagen subida.
-    whatsappButton.innerHTML = `<img src="logowhatsapp.jpg" alt="Contactar por WhatsApp">`;
+    // --- CORRECCIÓN AQUÍ: Insertamos la imagen directamente como innerHTML ---
+    whatsappButton.innerHTML = `<img src="logowhatsapp.jpg" alt="Contactar por WhatsApp" class="whatsapp-icon">`;
 
     // Agregar el botón al cuerpo del documento
     document.body.appendChild(whatsappButton);
