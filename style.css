@@ -250,11 +250,12 @@ footer h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25D366;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    /* Eliminamos el background-color y border-radius del botón principal */
+    background-color: transparent; /* Hacemos el fondo transparente */
+    width: 70px; /* Hacemos el área del botón más grande */
+    height: 70px; /* Hacemos el área del botón más grande */
+    border-radius: 0; /* Quitamos el borde redondeado del contenedor */
+    box-shadow: none; /* Quitamos la sombra del contenedor */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,10 +269,11 @@ footer h2 {
 
 /* --- ESTILOS PARA LA IMAGEN DEL LOGO DE WHATSAPP DENTRO DEL BOTÓN --- */
 .whatsapp-icon {
-    width: 35px;  /* Ajusta el tamaño de tu logo dentro del círculo */
-    height: 35px;
-    object-fit: contain; /* Para que la imagen se ajuste sin distorsionarse */
+    width: 60px;  /* Hacemos la imagen más grande */
+    height: 60px; /* Hacemos la imagen más grande */
+    object-fit: contain;
     border-radius: 50%; /* Esto es útil si tu JPG es cuadrado, lo hará redondo visualmente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Mantenemos la sombra en el ícono */
 }
 
 
