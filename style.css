@@ -113,7 +113,7 @@ body {
 
 .hero-logo {
     width: 400px !important; 
-    margin-bottom: 6px; /* <--- DISTANCIA REDUCIDA EN UN 70% (de 20px a 6px) */
+    margin-bottom: 6px;
 }
 
 #hero h1 { font-size: 3em; margin-bottom: 20px; }
@@ -175,7 +175,12 @@ form input, form select, form textarea { width: 100%; padding: 12px; margin-bott
 /* ======== ESTILOS BOTÓN DE WHATSAPP ======== */
 #whatsapp-button { position: fixed; bottom: 20px; right: 20px; background-color: #00E510; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: flex; justify-content: center; align-items: center; z-index: 1000; transition: transform 0.3s ease; }
 #whatsapp-button:hover { transform: scale(1.1); }
-.whatsapp-icon { width: 35px; height: 35px; object-fit: contain; border-radius: 50%; }
+.whatsapp-icon { 
+    width: 47px; /* <--- TAMAÑO AUMENTADO EN 33% (de 35px) */
+    height: 47px; /* <--- TAMAÑO AUMENTADO EN 33% (de 35px) */
+    object-fit: contain; 
+    border-radius: 50%; 
+}
 
 /* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
 @media (max-width: 768px) {
