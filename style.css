@@ -112,7 +112,7 @@ body {
 }
 
 .hero-logo {
-    width: 120px; /* <--- ESTA LÍNEA CONTROLA EL TAMAÑO */
+    width: 150px !important; /* <--- TAMAÑO AUMENTADO CON PRIORIDAD MÁXIMA */
     margin-bottom: 20px;
 }
 
