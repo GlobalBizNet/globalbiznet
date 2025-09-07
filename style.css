@@ -1,10 +1,10 @@
 /* ======== 1. VARIABLES Y ESTILOS GLOBALES ======== */
 :root {
-    --primary-blue: #0d47a1;  /* Azul oscuro del logo */
-    --secondary-blue: #1565c0; /* Azul intermedio */
-    --accent-blue: #42a5f5;   /* Azul claro */
-    --dark-bg: #1a1a1a;      /* Fondo oscuro para contraste */
-    --light-bg: #f4f7f6;     /* Fondo claro para secciones */
+    --primary-blue: #0d47a1;
+    --secondary-blue: #1565c0;
+    --accent-blue: #42a5f5;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f4f7f6;
     --text-light: #ffffff;
     --text-dark: #333333;
     --font-main: Arial, sans-serif;
@@ -21,6 +21,7 @@ body {
     background-color: var(--text-light);
     color: var(--text-dark);
     line-height: 1.6;
+    font-size: 18px; /* <-- Punto 4: Aumento del tamaño general */
 }
 
 .container {
@@ -53,12 +54,7 @@ body {
     text-decoration: none;
     color: var(--primary-blue);
     font-weight: bold;
-    font-size: 1.3em;
-}
-
-.logo img {
-    width: 30px;
-    margin-right: 8px;
+    font-size: 1.5em; /* <-- Punto 1: Letra más grande */
 }
 
 .nav-menu {
@@ -85,7 +81,6 @@ body {
     color: var(--primary-blue);
 }
 
-/* Menú Desplegable */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -118,17 +113,22 @@ body {
     background-position: center;
     color: var(--text-light);
     text-align: center;
-    padding: 200px 0 150px 0;
-    margin-top: 50px;
+    padding: 120px 0 150px 0; /* Ajuste de padding */
+    margin-top: 60px; /* Ajuste para la navbar */
+}
+
+.hero-logo {
+    width: 100px; /* Tamaño del logo en el hero */
+    margin-bottom: 20px;
 }
 
 #hero h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
 #hero p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     max-width: 600px;
     margin: 0 auto 30px auto;
 }
@@ -141,162 +141,126 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .cta-button:hover {
     background-color: var(--secondary-blue);
 }
 
-/* ======== 4. SECCIONES DE CONTENIDO GENERAL ======== */
-.content-section {
-    padding: 80px 0;
-    text-align: center;
-}
+/* ======== OTRAS SECCIONES (Ajustes de fuente heredados) ======== */
+.content-section { padding: 80px 0; text-align: center; }
+.content-section h2 { font-size: 2.5em; margin-bottom: 40px; color: var(--primary-blue); }
+.bg-light { background-color: var(--light-bg); }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left; }
+.service-card { background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.service-card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+.service-icon { font-size: 3em; color: var(--primary-blue); margin-bottom: 20px; }
+footer { background-color: var(--dark-bg); color: var(--text-light); padding: 60px 0 20px 0; text-align: center; }
+footer h2 { color: var(--text-light); }
+.contact-info p { margin: 10px 0; }
+.contact-info i { margin-right: 10px; color: var(--accent-blue); }
+.contact-info a { color: var(--text-light); text-decoration: none; }
+.contact-info a:hover { text-decoration: underline; }
+.footer-bottom { border-top: 1px solid #444; padding-top: 20px; margin-top: 40px; font-size: 0.9em; color: #aaa; }
 
-.content-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: var(--primary-blue);
-}
-
-.bg-light {
-    background-color: var(--light-bg);
-}
-
-/* ======== 5. SECCIÓN DE SERVICIOS ======== */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    text-align: left;
-}
-
-.service-card {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-}
-
-.service-icon {
-    font-size: 3em;
-    color: var(--primary-blue);
-    margin-bottom: 20px;
-}
-
-/* ======== 6. SECCIÓN DE BENEFICIOS ======== */
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.benefit-item {
-    text-align: center;
-}
-
-.benefit-icon {
-    font-size: 2.5em;
-    color: var(--secondary-blue);
-    margin-bottom: 15px;
-}
-
-/* ======== 7. PIE DE PÁGINA (FOOTER) ======== */
-footer {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-    padding: 60px 0 20px 0;
-    text-align: center;
-}
-
-footer h2 {
-    color: var(--text-light);
-}
-
-.contact-info p {
-    margin: 10px 0;
-    font-size: 1.1em;
-}
-
-.contact-info i {
-    margin-right: 10px;
-    color: var(--accent-blue);
-}
-
-.contact-info a {
-    color: var(--text-light);
-    text-decoration: none;
-}
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    border-top: 1px solid #444;
-    padding-top: 20px;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #aaa;
-}
-
-/* ======== ESTILOS BOTÓN DE WHATSAPP ======== */
-#whatsapp-button {
+/* ======== 8. ESTILOS DEL FORMULARIO MODAL ======== */
+.modal-overlay {
+    display: none; /* Oculto por defecto */
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #00E510; /* <-- COLOR ACTUALIZADO */
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    transition: transform 0.3s ease;
 }
 
-#whatsapp-button:hover {
-    transform: scale(1.1);
+.modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    font-size: 16px; /* Reset font size for form */
 }
 
-/* --- ESTILOS PARA LA IMAGEN DEL LOGO DE WHATSAPP DENTRO DEL BOTÓN --- */
-.whatsapp-icon {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
-    border-radius: 50%;
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #aaa;
+    cursor: pointer;
 }
 
+.modal-content h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 
-/* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
+.form-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.form-row input {
+    width: 100%;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-consent {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.form-consent input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e80069; /* Color del botón de la captura */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+    background-color: #c40058;
+}
+
+/* ======== Responsive y otros ajustes ======== */
 @media (max-width: 768px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .benefits-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .navbar .container {
-        flex-direction: column;
-    }
-    .nav-menu {
-        margin-top: 15px;
-    }
-
-    #hero {
-        padding: 120px 0 100px 0;
-        margin-top: 110px;
-    }
-    #hero h1 {
-        font-size: 2.5em;
-    }
+    body { font-size: 16px; } /* Ajuste en móviles */
+    .services-grid { grid-template-columns: 1fr; }
+    .navbar .container { flex-direction: column; }
+    .nav-menu { margin-top: 15px; }
+    #hero { margin-top: 110px; }
+    #hero h1 { font-size: 2.5em; }
+    .form-row { flex-direction: column; gap: 0; }
 }
