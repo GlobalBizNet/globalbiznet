@@ -33,7 +33,7 @@ body {
 .navbar {
     background-color: var(--text-light);
     border-bottom: 1px solid #e0e0e0;
-    padding: 10px 0; /* <-- VALOR AJUSTADO */
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -53,12 +53,12 @@ body {
     text-decoration: none;
     color: var(--primary-blue);
     font-weight: bold;
-    font-size: 1.3em; /* <-- VALOR AJUSTADO */
+    font-size: 1.3em;
 }
 
 .logo img {
-    width: 30px; /* <-- VALOR AJUSTADO */
-    margin-right: 8px; /* <-- VALOR AJUSTADO */
+    width: 30px;
+    margin-right: 8px;
 }
 
 .nav-menu {
@@ -71,7 +71,7 @@ body {
 
 .nav-menu li {
     margin-left: 30px;
-    position: relative; /* Para el menú desplegable */
+    position: relative;
 }
 
 .nav-menu a {
@@ -87,7 +87,7 @@ body {
 
 /* Menú Desplegable */
 .dropdown-menu {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -100,7 +100,7 @@ body {
     width: 280px;
 }
 .dropdown:hover .dropdown-menu {
-    display: block; /* Se muestra al pasar el cursor */
+    display: block;
 }
 .dropdown-menu li {
     margin: 0;
@@ -119,7 +119,7 @@ body {
     color: var(--text-light);
     text-align: center;
     padding: 200px 0 150px 0;
-    margin-top: 50px; /* <-- VALOR AJUSTADO */
+    margin-top: 50px;
 }
 
 #hero h1 {
@@ -250,20 +250,27 @@ footer h2 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25D366; /* Color oficial de WhatsApp */
+    background-color: #25D366;
     width: 60px;
     height: 60px;
-    border-radius: 50%; /* Para hacerlo redondo */
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Para que esté por encima de todo */
+    z-index: 1000;
     transition: transform 0.3s ease;
 }
 
 #whatsapp-button:hover {
-    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    transform: scale(1.1);
+}
+
+/* --- NUEVO BLOQUE PARA LA IMAGEN DEL LOGO DE WHATSAPP --- */
+#whatsapp-button img {
+    width: 35px;  /* Ajusta el tamaño de tu logo dentro del círculo */
+    height: 35px;
+    border-radius: 50%; /* Esto ayuda si tu jpg es cuadrado, lo hará redondo */
 }
 
 
@@ -286,7 +293,7 @@ footer h2 {
 
     #hero {
         padding: 120px 0 100px 0;
-        margin-top: 110px; /* Ajuste para el navbar colapsado */
+        margin-top: 110px;
     }
     #hero h1 {
         font-size: 2.5em;
