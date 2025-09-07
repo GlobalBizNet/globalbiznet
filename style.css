@@ -112,7 +112,7 @@ body {
 }
 
 .hero-logo {
-    width: 70px; /* <-- Punto 1: Tamaño del logo ajustado */
+    width: 120px; /* <-- TAMAÑO DEL LOGO AUMENTADO */
     margin-bottom: 20px;
 }
 
@@ -209,9 +209,9 @@ form input, form select, form textarea {
 
 /* ======== ESTILOS BOTÓN DE WHATSAPP ======== */
 #whatsapp-button {
-    position: fixed; /* <-- Punto 2: Estilo restaurado */
-    bottom: 20px;   /* <-- Punto 2: Estilo restaurado */
-    right: 20px;    /* <-- Punto 2: Estilo restaurado */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     background-color: #00E510;
     width: 60px;
     height: 60px;
