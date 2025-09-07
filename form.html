@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Asesoría - GlobalBizNet</title>
+    <link rel="icon" type="image/png" href="globalbiznet.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="form-page-background">
+
+    <div class="form-container">
+        <div class="modal-content">
+            <h3>Solicitar Asesoría</h3>
+            <form action="#" method="POST"> <div class="form-row">
+                    <input type="text" name="Nombre" placeholder="Nombre *" required>
+                    <input type="text" name="Apellido" placeholder="Apellido *" required>
+                </div>
+                <input type="email" name="Correo electrónico" placeholder="Correo electrónico *" required>
+                <div class="form-row">
+                    <input type="tel" name="Número de teléfono" placeholder="Número de teléfono *" required>
+                    <input type="text" name="Empresa" placeholder="Empresa *" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="Cargo" placeholder="Cargo *" required>
+                    <select name="País" required>
+                        <option value="" disabled selected>País *</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Mexico">México</option>
+                        <option value="Peru">Perú</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <select name="Industria" required>
+                    <option value="" disabled selected>Industria *</option>
+                    <option value="Tecnologia">Tecnología</option>
+                    <option value="Finanzas">Finanzas</option>
+                    <option value="Salud">Salud</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <textarea name="Comentario" placeholder="¿Tiene algún comentario adicional? *" required></textarea>
+                <div class="form-consent">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Autorizo recibir información relevante, incluyendo el uso de mis datos personales por parte de GlobalBizNet con fines de comunicación.</label>
+                </div>
+                <button type="submit" class="submit-button">ENVIAR MENSAJE</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
