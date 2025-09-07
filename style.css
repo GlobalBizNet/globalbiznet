@@ -112,7 +112,7 @@ body {
 }
 
 .hero-logo {
-    width: 120px; /* <-- TAMAÑO DEL LOGO AUMENTADO */
+    width: 120px; /* <--- ESTA LÍNEA CONTROLA EL TAMAÑO */
     margin-bottom: 20px;
 }
 
