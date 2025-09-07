@@ -87,7 +87,7 @@ ul {
 }
 
 ul li {
-    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="%231976d2"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24" width="24" fill="%231976d2"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
     background-size: 20px;
     padding-left: 30px;
     margin-bottom: 10px;
@@ -110,6 +110,28 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* ======== ESTILOS BOTÓN DE WHATSAPP ======== */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Para hacerlo redondo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para que esté por encima de todo */
+    transition: transform 0.3s ease;
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
 
 /* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
 @media (max-width: 768px) {
