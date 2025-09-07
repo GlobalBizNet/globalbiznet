@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalBizNet - Desarrollo integral de negocios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="globalbiznet.png" alt="Logo GlobalBizNet" id="logo">
+            <h1>GlobalBizNet</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Transforma la eficiencia empresarial</h2>
+            [cite_start]<p>Gestionando la experiencia del cliente y optimizando procesos.</p> [cite: 5]
+        </section>
+
+        <section id="quienes-somos">
+            [cite_start]<h3>Quiénes somos</h3> [cite: 6]
+            [cite_start]<p>Impulsamos la transformación digital en la atención al cliente mediante tecnología, automatización e inteligencia artificial, adaptándonos a las necesidades de cada negocio.</p> [cite: 7]
+        </section>
+
+        <section id="servicios">
+            [cite_start]<h3>Nuestros servicios</h3> [cite: 8]
+            <div class="servicios-container">
+                <div class="servicio">
+                    <h4>Atención Omnicanal</h4>
+                    [cite_start]<p>Todas las herramientas de interacción y gestión del cliente integradas en una sola plataforma.</p> [cite: 10]
+                </div>
+                <div class="servicio">
+                    <h4>Analítica y Experiencia del Cliente</h4>
+                    <ul>
+                        [cite_start]<li>Reportes en tiempo real. [cite: 17]</li>
+                        [cite_start]<li>Encuestas y métricas de satisfacción. [cite: 18]</li>
+                        [cite_start]<li>Insights accionables para mejorar procesos. [cite: 19]</li>
+                    </ul>
+                </div>
+                <div class="servicio">
+                    <h4>Soluciones de IA</h4>
+                    [cite_start]<p>Automatización que reduce costos y tiempos.</p> [cite: 20]
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios">
+            [cite_start]<h3>Beneficios</h3> [cite: 13]
+            <ul>
+                [cite_start]<li>Reducción de costos operativos. [cite: 14]</li>
+                [cite_start]<li>Atención rápida y personalizada. [cite: 14]</li>
+                [cite_start]<li>Escalabilidad inmediata. [cite: 14]</li>
+                [cite_start]<li>Decisiones basadas en datos. [cite: 15]</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Contacto</h3>
+        [cite_start]<p>Email: <a href="mailto:jburgos@globalbiznet.co">jburgos@globalbiznet.co</a></p> [cite: 22]
+        [cite_start]<p>Teléfono: +57 302 374 1891</p> [cite: 21]
+        [cite_start]<p>Ubicación: Bogotá, Colombia</p> [cite: 23]
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
