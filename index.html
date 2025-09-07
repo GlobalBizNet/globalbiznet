@@ -3,68 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobalBizNet - Desarrollo integral de negocios</title>
+    <title>GlobalBizNet - Desarrollo Integral de Negocios</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <img src="globalbiznet.png" alt="Logo GlobalBizNet" id="logo">
-            <h1>GlobalBizNet</h1>
-        </nav>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="globalbiznet.png" alt="Logo GlobalBizNet">
+                <span>GlobalBizNet</span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="#servicios">Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Atención Omnicanal</a></li>
+                            <li><a href="#">Analítica y Experiencia del Cliente</a></li>
+                            <li><a href="#">Soluciones de IA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="hero">
-            <h2>Transforma la eficiencia empresarial</h2>
-            [cite_start]<p>Gestionando la experiencia del cliente y optimizando procesos.</p> [cite: 5]
+            <div class="hero-content">
+                <h1>Transformación Digital para la Experiencia del Cliente</h1>
+                <p>Integramos tecnología, automatización e inteligencia artificial para optimizar tus procesos y potenciar tu negocio.</p>
+                <a href="#contacto" class="cta-button">Solicitar Asesoría</a>
+            </div>
         </section>
 
-        <section id="quienes-somos">
-            [cite_start]<h3>Quiénes somos</h3> [cite: 6]
-            [cite_start]<p>Impulsamos la transformación digital en la atención al cliente mediante tecnología, automatización e inteligencia artificial, adaptándonos a las necesidades de cada negocio.</p> [cite: 7]
+        <section id="nosotros" class="content-section">
+            <div class="container">
+                <h2>Impulsamos tu Crecimiento</h2>
+                <p>Somos un equipo apasionado por la innovación y la eficiencia. En GlobalBizNet, no solo ofrecemos servicios, creamos alianzas estratégicas para llevar tu atención al cliente al siguiente nivel. Nuestra misión es adaptar las herramientas más avanzadas a las necesidades únicas de tu negocio, garantizando resultados medibles y un crecimiento sostenible.</p>
+            </div>
         </section>
-
-        <section id="servicios">
-            [cite_start]<h3>Nuestros servicios</h3> [cite: 8]
-            <div class="servicios-container">
-                <div class="servicio">
-                    <h4>Atención Omnicanal</h4>
-                    [cite_start]<p>Todas las herramientas de interacción y gestión del cliente integradas en una sola plataforma.</p> [cite: 10]
-                </div>
-                <div class="servicio">
-                    <h4>Analítica y Experiencia del Cliente</h4>
-                    <ul>
-                        [cite_start]<li>Reportes en tiempo real. [cite: 17]</li>
-                        [cite_start]<li>Encuestas y métricas de satisfacción. [cite: 18]</li>
-                        [cite_start]<li>Insights accionables para mejorar procesos. [cite: 19]</li>
-                    </ul>
-                </div>
-                <div class="servicio">
-                    <h4>Soluciones de IA</h4>
-                    [cite_start]<p>Automatización que reduce costos y tiempos.</p> [cite: 20]
+        
+        <section id="servicios" class="content-section bg-light">
+            <div class="container">
+                <h2>Nuestras Soluciones</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-headset service-icon"></i>
+                        <h3>Atención Omnicanal</h3>
+                        <p>Integramos todos tus canales de comunicación en una sola plataforma fluida para una gestión del cliente sin interrupciones.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-chart-line service-icon"></i>
+                        <h3>Analítica y Experiencia del Cliente</h3>
+                        <p>Convertimos datos en decisiones. Obtén reportes en tiempo real y métricas de satisfacción para mejorar continuamente.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-robot service-icon"></i>
+                        <h3>Soluciones de IA</h3>
+                        <p>Automatizamos procesos para reducir costos y tiempos de respuesta, liberando a tu equipo para tareas de alto valor.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="beneficios">
-            [cite_start]<h3>Beneficios</h3> [cite: 13]
-            <ul>
-                [cite_start]<li>Reducción de costos operativos. [cite: 14]</li>
-                [cite_start]<li>Atención rápida y personalizada. [cite: 14]</li>
-                [cite_start]<li>Escalabilidad inmediata. [cite: 14]</li>
-                [cite_start]<li>Decisiones basadas en datos. [cite: 15]</li>
-            </ul>
+        <section id="beneficios" class="content-section">
+            <div class="container">
+                <h2>¿Por Qué Elegir GlobalBizNet?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-dollar-sign benefit-icon"></i>
+                        <h4>Reducción de Costos</h4>
+                        <p>Optimiza tus operaciones y reduce gastos innecesarios.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-users benefit-icon"></i>
+                        <h4>Atención Personalizada</h4>
+                        <p>Ofrece a tus clientes una experiencia rápida y a la medida.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-chart-bar benefit-icon"></i>
+                        <h4>Decisiones Basadas en Datos</h4>
+                        <p>Utiliza insights accionables para impulsar tu estrategia.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-expand-alt benefit-icon"></i>
+                        <h4>Escalabilidad Inmediata</h4>
+                        <p>Nuestra infraestructura crece contigo, sin límites.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <h3>Contacto</h3>
-        [cite_start]<p>Email: <a href="mailto:jburgos@globalbiznet.co">jburgos@globalbiznet.co</a></p> [cite: 22]
-        [cite_start]<p>Teléfono: +57 302 374 1891</p> [cite: 21]
-        [cite_start]<p>Ubicación: Bogotá, Colombia</p> [cite: 23]
+    <footer id="contacto">
+        <div class="container">
+            <h2>Ponte en Contacto</h2>
+            <p>¿Listo para transformar tu negocio? Hablemos.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:jburgos@globalbiznet.co">jburgos@globalbiznet.co</a></p>
+                <p><i class="fas fa-phone"></i> +57 302 374 1891</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bogotá, Colombia</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GlobalBizNet. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
