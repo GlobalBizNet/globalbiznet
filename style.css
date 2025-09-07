@@ -244,3 +244,51 @@ footer h2 {
     font-size: 0.9em;
     color: #aaa;
 }
+
+/* ======== ESTILOS BOTÓN DE WHATSAPP ======== */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Para hacerlo redondo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para que esté por encima de todo */
+    transition: transform 0.3s ease;
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+
+/* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+    .nav-menu {
+        margin-top: 15px;
+    }
+
+    #hero {
+        padding: 120px 0 100px 0;
+        margin-top: 110px; /* Ajuste para el navbar colapsado */
+    }
+    #hero h1 {
+        font-size: 2.5em;
+    }
+}
