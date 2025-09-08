@@ -57,7 +57,6 @@ body {
     font-size: 1.5em;
 }
 
-/* ESTILOS PARA EL LOGO EN EL ENCABEZADO (RESTAURADO) */
 .logo img {
     width: 90px;
     margin-right: 8px;
@@ -98,7 +97,7 @@ body {
     margin: 10px 0 0 0;
     border-radius: 5px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 300px; /* <--- ANCHO AUMENTADO */
+    width: 300px;
 }
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -107,7 +106,7 @@ body {
 .dropdown-menu a { 
     display: block; 
     padding: 10px 20px; 
-    white-space: normal; /* <--- PERMITE QUE EL TEXTO SE DIVIDA EN LÍNEAS */
+    white-space: normal;
 }
 
 /* ======== 3. SECCIÓN PRINCIPAL (HERO) ======== */
@@ -117,13 +116,13 @@ body {
     background-position: center;
     color: var(--text-light);
     text-align: center;
-    padding: 80px 0 60px 0;
+    padding: 0px 0 60px 0;
     margin-top: 60px;
 }
 
 .hero-logo {
     width: 400px !important; 
-    margin-bottom: -30px;
+    margin-bottom: -80px;
 }
 
 #hero h1 { 
@@ -149,41 +148,66 @@ body {
 /* ======== OTRAS SECCIONES ======== */
 .content-section { padding: 80px 0; text-align: center; }
 .content-section h2 { font-size: 2.5em; margin-bottom: 40px; color: var(--primary-blue); }
+#nosotros p { max-width: 800px; margin: 0 auto; }
 .bg-light { background-color: var(--light-bg); }
-.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left; }
-.service-card { background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+/* ======== NUEVA SECCIÓN: MISIÓN Y VISIÓN ======== */
+.mision-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+}
+.mision-vision-grid .card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.mision-vision-grid h3 {
+    margin-top: 0;
+    color: var(--primary-blue);
+}
+
+/* ======== SERVICIOS (AJUSTADO A 4 COLUMNAS) ======== */
+.services-grid-four { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: left; }
+.service-card { background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; box-sizing: border-box; }
 .service-card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
 .service-icon { font-size: 3em; color: var(--primary-blue); margin-bottom: 20px; }
 
-/* SECCIÓN DE BENEFICIOS (RESTAURADA) */
-.benefits-grid {
+/* ======== BENEFICIOS (AJUSTADO A 5 COLUMNAS) ======== */
+.benefits-grid-five {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
+.benefit-item { text-align: center; }
+.benefit-icon { font-size: 2.5em; color: var(--secondary-blue); margin-bottom: 15px; }
 
-.benefit-item {
-    text-align: center;
+/* ======== NUEVA SECCIÓN: CLIENTES ======== */
+.sectors-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-
-.benefit-icon {
-    font-size: 2.5em;
+.sectors-list span {
+    background-color: var(--light-bg);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
     color: var(--secondary-blue);
-    margin-bottom: 15px;
+}
+.sectors-list i {
+    margin-right: 8px;
 }
 
 /* ======== FOOTER ======== */
 footer { background-color: var(--dark-bg); color: var(--text-light); padding: 60px 0 20px 0; text-align: center; }
-
-footer h2 { 
-    color: var(--text-light);
-    margin-top: 30px;
-}
-
-.contact-info {
-    margin-top: 20px;
-}
-
+footer h2 { color: var(--text-light); margin-top: 0; margin-bottom: 20px; }
+footer .cta-button { margin-bottom: 30px; }
+.contact-info { margin-top: 20px; }
 .contact-info p { margin: 10px 0; }
 .contact-info i { margin-right: 10px; color: var(--accent-blue); }
 .contact-info a { color: var(--text-light); text-decoration: none; }
@@ -191,6 +215,7 @@ footer h2 {
 .footer-bottom { border-top: 1px solid #444; padding-top: 20px; margin-top: 40px; font-size: 0.9em; color: #aaa; }
 
 /* ======== 8. ESTILOS DE LA PÁGINA DEL FORMULARIO ======== */
+/* (Sin cambios) */
 .form-page-background { background-color: var(--light-bg); }
 .form-container { display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
 .modal-content { background-color: white; padding: 40px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); width: 100%; max-width: 600px; position: relative; font-size: 16px; }
@@ -204,20 +229,23 @@ form input, form select, form textarea { width: 100%; padding: 12px; margin-bott
 .submit-button:hover { background-color: #c40058; }
 
 /* ======== ESTILOS BOTÓN DE WHATSAPP ======== */
+/* (Sin cambios) */
 #whatsapp-button { position: fixed; bottom: 20px; right: 20px; background-color: #00E510; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: flex; justify-content: center; align-items: center; z-index: 1000; transition: transform 0.3s ease; }
 #whatsapp-button:hover { transform: scale(1.1); }
-.whatsapp-icon { 
-    width: 47px;
-    height: 47px;
-    object-fit: contain; 
-    border-radius: 50%; 
-}
+.whatsapp-icon { width: 47px; height: 47px; object-fit: contain; border-radius: 50%; }
 
 /* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
+@media (max-width: 992px) {
+    .services-grid-four, .benefits-grid-five {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     body { font-size: 16px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .benefits-grid { grid-template-columns: 1fr 1fr; }
+    .mision-vision-grid, .services-grid-four, .benefits-grid-five {
+        grid-template-columns: 1fr;
+    }
     .navbar .container { flex-direction: column; }
     .nav-menu { margin-top: 15px; }
     #hero { margin-top: 110px; }
