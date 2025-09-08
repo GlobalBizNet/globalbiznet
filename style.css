@@ -57,6 +57,11 @@ body {
     font-size: 1.5em;
 }
 
+.logo img {
+    width: 30px;
+    margin-right: 8px;
+}
+
 .nav-menu {
     list-style: none;
     margin: 0;
@@ -107,7 +112,7 @@ body {
     background-position: center;
     color: var(--text-light);
     text-align: center;
-    padding: 0px 0 60px 0; /* <--- ALTURA AJUSTADA */
+    padding: 10px 0 60px 0;
     margin-top: 60px;
 }
 
@@ -116,7 +121,11 @@ body {
     margin-bottom: -80px;
 }
 
-#hero h1 { font-size: 3em; margin-bottom: 20px; }
+#hero h1 { 
+    font-size: 3em; 
+    margin-bottom: 20px;
+    line-height: 1.2; /* <-- INTERLINEADO REDUCIDO */
+}
 #hero p { font-size: 1.1em; max-width: 600px; margin: 0 auto 30px auto; }
 
 .cta-button {
@@ -140,6 +149,23 @@ body {
 .service-card { background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .service-card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
 .service-icon { font-size: 3em; color: var(--primary-blue); margin-bottom: 20px; }
+
+/* ======== SECCIÓN DE BENEFICIOS ======== */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.benefit-item {
+    text-align: center;
+}
+
+.benefit-icon {
+    font-size: 2.5em;
+    color: var(--secondary-blue);
+    margin-bottom: 15px;
+}
 
 /* ======== FOOTER ======== */
 footer { background-color: var(--dark-bg); color: var(--text-light); padding: 60px 0 20px 0; text-align: center; }
@@ -186,6 +212,7 @@ form input, form select, form textarea { width: 100%; padding: 12px; margin-bott
 @media (max-width: 768px) {
     body { font-size: 16px; }
     .services-grid { grid-template-columns: 1fr; }
+    .benefits-grid { grid-template-columns: 1fr 1fr; }
     .navbar .container { flex-direction: column; }
     .nav-menu { margin-top: 15px; }
     #hero { margin-top: 110px; }
