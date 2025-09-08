@@ -57,6 +57,7 @@ body {
     font-size: 1.5em;
 }
 
+/* ESTILOS PARA EL LOGO EN EL ENCABEZADO (RESTAURADO) */
 .logo img {
     width: 30px;
     margin-right: 8px;
@@ -112,19 +113,19 @@ body {
     background-position: center;
     color: var(--text-light);
     text-align: center;
-    padding: 10px 0 60px 0;
+    padding: 0px 0 60px 0; /* Mantenemos tu ajuste */
     margin-top: 60px;
 }
 
 .hero-logo {
     width: 400px !important; 
-    margin-bottom: -80px;
+    margin-bottom: -80px; /* Mantenemos tu ajuste */
 }
 
 #hero h1 { 
     font-size: 3em; 
     margin-bottom: 20px;
-    line-height: 1.2; /* <-- INTERLINEADO REDUCIDO */
+    line-height: 1.2; /* INTERLINEADO DEL TÍTULO AJUSTADO */
 }
 #hero p { font-size: 1.1em; max-width: 600px; margin: 0 auto 30px auto; }
 
@@ -150,7 +151,7 @@ body {
 .service-card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
 .service-icon { font-size: 3em; color: var(--primary-blue); margin-bottom: 20px; }
 
-/* ======== SECCIÓN DE BENEFICIOS ======== */
+/* SECCIÓN DE BENEFICIOS (RESTAURADA) */
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
