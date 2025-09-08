@@ -98,13 +98,17 @@ body {
     margin: 10px 0 0 0;
     border-radius: 5px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 280px;
+    width: 300px; /* <--- ANCHO AUMENTADO */
 }
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 .dropdown-menu li { margin: 0; }
-.dropdown-menu a { display: block; padding: 10px 20px; white-space: nowrap; }
+.dropdown-menu a { 
+    display: block; 
+    padding: 10px 20px; 
+    white-space: normal; /* <--- PERMITE QUE EL TEXTO SE DIVIDA EN LÍNEAS */
+}
 
 /* ======== 3. SECCIÓN PRINCIPAL (HERO) ======== */
 #hero {
@@ -113,19 +117,19 @@ body {
     background-position: center;
     color: var(--text-light);
     text-align: center;
-    padding: 0px 0 60px 0; /* Mantenemos tu ajuste */
+    padding: 0px 0 60px 0;
     margin-top: 60px;
 }
 
 .hero-logo {
     width: 400px !important; 
-    margin-bottom: -80px; /* Mantenemos tu ajuste */
+    margin-bottom: -80px;
 }
 
 #hero h1 { 
     font-size: 3em; 
     margin-bottom: 20px;
-    line-height: 1.2; /* INTERLINEADO DEL TÍTULO AJUSTADO */
+    line-height: 1.2;
 }
 #hero p { font-size: 1.1em; max-width: 600px; margin: 0 auto 30px auto; }
 
