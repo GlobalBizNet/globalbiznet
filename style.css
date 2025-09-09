@@ -146,7 +146,7 @@ body {
 .cta-button:hover { background-color: var(--secondary-blue); }
 
 /* ======== OTRAS SECCIONES ======== */
-.content-section { padding: 50px 0; }
+.content-section { padding: 20px 0; }
 .content-section h2 { 
     font-size: 2.5em; 
     margin-bottom: 40px; /* Margen general para títulos */
@@ -216,8 +216,8 @@ body {
 .sectors-list i {
     margin-right: 8px;
 }
-#clientes p {
-    text-align: center;
+#clientes {
+    padding-top: 20px; /* <--- AJUSTA ESTE NÚMERO */
 }
 
 /* ======== FOOTER ======== */
