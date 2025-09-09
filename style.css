@@ -159,6 +159,10 @@ body {
 .bg-light { background-color: var(--light-bg); }
 
 /* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
+/* Para reducir el espacio debajo de la sección de Beneficios */
+#beneficios {
+    padding-bottom: 0; /* <--- AJUSTA ESTE NÚMERO */
+}
 #nosotros, #clientes {
     padding-top: 0; /* <-- VALOR AJUSTADO */
 }
