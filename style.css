@@ -146,10 +146,20 @@ body {
 .cta-button:hover { background-color: var(--secondary-blue); }
 
 /* ======== OTRAS SECCIONES ======== */
-.content-section { padding: 10px 0; }
-.content-section h2 { font-size: 2.5em; margin-bottom: 0px; color: var(--primary-blue); text-align: center;}
+.content-section { padding: 50px 0; }
+.content-section h2 { 
+    font-size: 2.5em; 
+    margin-bottom: 40px; /* Margen general para títulos */
+    color: var(--primary-blue); 
+    text-align: center;
+}
 #nosotros p { max-width: 1000px; margin: 0 auto; text-align: justify; }
 .bg-light { background-color: var(--light-bg); }
+
+/* --- AJUSTES DE MARGEN ESPECÍFICOS --- */
+#nosotros h2, #clientes h2 {
+    margin-bottom: 20px; /* Margen reducido solo para estos títulos */
+}
 
 /* ======== NUEVA SECCIÓN: MISIÓN Y VISIÓN ======== */
 .mision-vision-grid {
@@ -167,7 +177,7 @@ body {
 .mision-vision-grid h3 {
     margin-top: 0;
     color: var(--primary-blue);
-    margin-bottom: 0px; /* <--- AÑADE ESTA LÍNEA */
+    margin-bottom: 10px;
 }
 
 /* ======== SERVICIOS (AJUSTADO A 4 COLUMNAS) ======== */
@@ -183,6 +193,9 @@ body {
     gap: 20px;
 }
 .benefit-item { text-align: center; }
+.benefit-item h4 {
+    height: 40px; /* Altura fija para alinear los títulos */
+}
 .benefit-icon { font-size: 2.5em; color: var(--secondary-blue); margin-bottom: 15px; }
 
 /* ======== NUEVA SECCIÓN: CLIENTES ======== */
