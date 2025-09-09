@@ -159,8 +159,11 @@ body {
 .bg-light { background-color: var(--light-bg); }
 
 /* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
-#nosotros, #clientes {
-    padding-top: 10px; 
+#nosotros {
+    padding-top: 10px;
+}
+#clientes {
+    padding-top: -10px; /* <--- ESTA ES LA LÍNEA QUE CONTROLA EL ESPACIO */
 }
 
 #beneficios {
