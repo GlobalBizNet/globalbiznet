@@ -111,7 +111,7 @@ body {
 
 /* ======== 3. SECCIÓN PRINCIPAL (HERO) ======== */
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto-format&fit=crop');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     color: var(--text-light);
@@ -147,11 +147,11 @@ body {
 
 /* ======== OTRAS SECCIONES ======== */
 .content-section { 
-    padding: 20px 0; /* <-- ESPACIADO GENERAL RESTAURADO */
+    padding: 20px 0;
 }
 .content-section h2 { 
     font-size: 2.5em; 
-    margin-bottom: 40px; /* <-- MARGEN GENERAL RESTAURADO */
+    margin-bottom: 40px;
     color: var(--primary-blue); 
     text-align: center;
 }
@@ -159,12 +159,10 @@ body {
 .bg-light { background-color: var(--light-bg); }
 
 /* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
-/* Para acercar secciones a la de arriba */
 #nosotros, #clientes {
     padding-top: 10px; 
 }
 
-/* Para acercar textos a sus títulos */
 #nosotros h2, #clientes h2 {
     margin-bottom: 10px;
 }
@@ -259,6 +257,11 @@ form input, form select, form textarea { width: 100%; padding: 12px; margin-bott
 #whatsapp-button { position: fixed; bottom: 20px; right: 20px; background-color: #00E510; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display: flex; justify-content: center; align-items: center; z-index: 1000; transition: transform 0.3s ease; }
 #whatsapp-button:hover { transform: scale(1.1); }
 .whatsapp-icon { width: 47px; height: 47px; object-fit: contain; border-radius: 50%; }
+
+/* --- REGLA AÑADIDA PARA CORREGIR EL SALTO DE LOS HIPERVÍNCULOS --- */
+section[id] {
+    scroll-margin-top: 130px;
+}
 
 /* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
 @media (max-width: 992px) {
