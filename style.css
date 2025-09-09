@@ -111,7 +111,7 @@ body {
 
 /* ======== 3. SECCIÓN PRINCIPAL (HERO) ======== */
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto-format&fit=crop');
     background-size: cover;
     background-position: center;
     color: var(--text-light);
@@ -146,20 +146,32 @@ body {
 .cta-button:hover { background-color: var(--secondary-blue); }
 
 /* ======== OTRAS SECCIONES ======== */
-.content-section { padding: 0px 0; }
+.content-section { 
+    padding: 50px 0; /* <-- ESPACIADO GENERAL RESTAURADO */
+}
 .content-section h2 { 
     font-size: 2.5em; 
-    margin-bottom: 40px; /* Margen general para títulos */
+    margin-bottom: 40px; /* <-- MARGEN GENERAL RESTAURADO */
     color: var(--primary-blue); 
     text-align: center;
 }
 #nosotros p { max-width: 1000px; margin: 0 auto; text-align: justify; }
 .bg-light { background-color: var(--light-bg); }
 
-/* --- AJUSTES DE MARGEN ESPECÍFICOS --- */
-#nosotros h2, #clientes h2 {
-    margin-bottom: 10px; /* Margen reducido solo para estos títulos */
+/* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
+/* Para acercar secciones a la de arriba */
+#nosotros, #clientes {
+    padding-top: 20px; 
 }
+
+/* Para acercar textos a sus títulos */
+#nosotros h2, #clientes h2 {
+    margin-bottom: 20px;
+}
+.mision-vision-grid h3 {
+    margin-bottom: 15px;
+}
+
 
 /* ======== NUEVA SECCIÓN: MISIÓN Y VISIÓN ======== */
 .mision-vision-grid {
@@ -177,7 +189,6 @@ body {
 .mision-vision-grid h3 {
     margin-top: 0;
     color: var(--primary-blue);
-    margin-bottom: 10px;
 }
 
 /* ======== SERVICIOS (AJUSTADO A 4 COLUMNAS) ======== */
@@ -194,7 +205,7 @@ body {
 }
 .benefit-item { text-align: center; }
 .benefit-item h4 {
-    height: 40px; /* Altura fija para alinear los títulos */
+    height: 40px;
 }
 .benefit-icon { font-size: 2.5em; color: var(--secondary-blue); margin-bottom: 15px; }
 
@@ -216,8 +227,8 @@ body {
 .sectors-list i {
     margin-right: 8px;
 }
-#clientes {
-    padding-top: 20px; /* <--- AJUSTA ESTE NÚMERO */
+#clientes p {
+    text-align: center;
 }
 
 /* ======== FOOTER ======== */
