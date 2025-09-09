@@ -163,16 +163,12 @@ body {
     padding-top: 10px; 
 }
 
-/* --- REGLA AÑADIDA PARA ACERCAR LA SECCIÓN DE CLIENTES --- */
 #beneficios {
     padding-bottom: 0;
 }
 
 #nosotros h2, #clientes h2 {
     margin-bottom: 10px;
-}
-.mision-vision-grid h3 {
-    margin-bottom: 5px;
 }
 
 
@@ -192,6 +188,7 @@ body {
 .mision-vision-grid h3 {
     margin-top: 0;
     color: var(--primary-blue);
+    margin-bottom: 0; /* <--- ESPACIO REDUCIDO AL MÍNIMO */
 }
 
 /* ======== SERVICIOS (AJUSTADO A 4 COLUMNAS) ======== */
