@@ -159,15 +159,12 @@ body {
 .bg-light { background-color: var(--light-bg); }
 
 /* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
-#nosotros {
-    padding-top: 10px;
-}
-#clientes {
-    padding-top: 0; /* Espacio superior eliminado */
+#nosotros, #clientes {
+    padding-top: 0; /* <-- VALOR AJUSTADO */
 }
 
 #nosotros h2, #clientes h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* <-- VALOR AJUSTADO */
 }
 .mision-vision-grid h3 {
     margin-bottom: 5px;
@@ -212,7 +209,7 @@ body {
 
 /* ======== NUEVA SECCIÓN: CLIENTES ======== */
 .sectors-list {
-    margin-top: 30px;
+    margin-top: 15px; /* <-- VALOR AJUSTADO */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
