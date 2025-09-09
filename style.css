@@ -159,16 +159,17 @@ body {
 .bg-light { background-color: var(--light-bg); }
 
 /* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
-/* Para reducir el espacio debajo de la sección de Beneficios */
-#beneficios {
-    padding-bottom: 0; /* <--- AJUSTA ESTE NÚMERO */
-}
 #nosotros, #clientes {
-    padding-top: 0; /* <-- VALOR AJUSTADO */
+    padding-top: 10px; 
+}
+
+/* --- REGLA AÑADIDA PARA ACERCAR LA SECCIÓN DE CLIENTES --- */
+#beneficios {
+    padding-bottom: 0;
 }
 
 #nosotros h2, #clientes h2 {
-    margin-bottom: 5px; /* <-- VALOR AJUSTADO */
+    margin-bottom: 10px;
 }
 .mision-vision-grid h3 {
     margin-bottom: 5px;
@@ -213,7 +214,7 @@ body {
 
 /* ======== NUEVA SECCIÓN: CLIENTES ======== */
 .sectors-list {
-    margin-top: 15px; /* <-- VALOR AJUSTADO */
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
