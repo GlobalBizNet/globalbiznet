@@ -147,7 +147,7 @@ body {
 
 /* ======== OTRAS SECCIONES ======== */
 .content-section { 
-    padding: 50px 0; /* <-- ESPACIADO GENERAL RESTAURADO */
+    padding: 20px 0; /* <-- ESPACIADO GENERAL RESTAURADO */
 }
 .content-section h2 { 
     font-size: 2.5em; 
@@ -161,12 +161,12 @@ body {
 /* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
 /* Para acercar secciones a la de arriba */
 #nosotros, #clientes {
-    padding-top: 20px; 
+    padding-top: 10px; 
 }
 
 /* Para acercar textos a sus títulos */
 #nosotros h2, #clientes h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .mision-vision-grid h3 {
     margin-bottom: 15px;
