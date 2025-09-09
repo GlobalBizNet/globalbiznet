@@ -111,7 +111,7 @@ body {
 
 /* ======== 3. SECCIÓN PRINCIPAL (HERO) ======== */
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto-format&fit=crop');
     background-size: cover;
     background-position: center;
     color: var(--text-light);
@@ -146,10 +146,30 @@ body {
 .cta-button:hover { background-color: var(--secondary-blue); }
 
 /* ======== OTRAS SECCIONES ======== */
-.content-section { padding: 10px 0; }
-.content-section h2 { font-size: 2.5em; margin-bottom: 40px; color: var(--primary-blue); text-align: center;}
+.content-section { 
+    padding: 20px 0;
+}
+.content-section h2 { 
+    font-size: 2.5em; 
+    margin-bottom: 40px;
+    color: var(--primary-blue); 
+    text-align: center;
+}
 #nosotros p { max-width: 1000px; margin: 0 auto; text-align: justify; }
 .bg-light { background-color: var(--light-bg); }
+
+/* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
+#nosotros, #clientes {
+    padding-top: 10px; 
+}
+
+#nosotros h2, #clientes h2 {
+    margin-bottom: 10px;
+}
+.mision-vision-grid h3 {
+    margin-bottom: 5px;
+}
+
 
 /* ======== NUEVA SECCIÓN: MISIÓN Y VISIÓN ======== */
 .mision-vision-grid {
@@ -182,6 +202,9 @@ body {
     gap: 20px;
 }
 .benefit-item { text-align: center; }
+.benefit-item h4 {
+    height: 40px;
+}
 .benefit-icon { font-size: 2.5em; color: var(--secondary-blue); margin-bottom: 15px; }
 
 /* ======== NUEVA SECCIÓN: CLIENTES ======== */
@@ -235,6 +258,11 @@ form input, form select, form textarea { width: 100%; padding: 12px; margin-bott
 #whatsapp-button:hover { transform: scale(1.1); }
 .whatsapp-icon { width: 47px; height: 47px; object-fit: contain; border-radius: 50%; }
 
+/* --- REGLA AÑADIDA PARA CORREGIR EL SALTO DE LOS HIPERVÍNCULOS --- */
+section[id] {
+    scroll-margin-top: 130px;
+}
+
 /* ======== ESTILOS PARA MÓVILES (RESPONSIVE) ======== */
 @media (max-width: 992px) {
     .services-grid-four, .benefits-grid-five {
@@ -261,7 +289,6 @@ form input, form select, form textarea { width: 100%; padding: 12px; margin-bott
     }
     .form-row { flex-direction: column; gap: 0; }
     
-    /* === AJUSTES PARA MEJORAR LA VISTA MÓVIL === */
     .hero-logo {
         width: 200px !important;
         margin-bottom: -10px;
