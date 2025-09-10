@@ -159,11 +159,8 @@ body {
 .bg-light { background-color: var(--light-bg); }
 
 /* --- AJUSTES DE ESPACIADO ESPECÍFICOS --- */
-#nosotros {
-    padding-top: 10px;
-}
-#clientes {
-    padding-top: -10px; /* <--- ESTA ES LA LÍNEA QUE CONTROLA EL ESPACIO */
+#nosotros, #clientes {
+    padding-top: 10px; 
 }
 
 #beneficios {
@@ -174,6 +171,10 @@ body {
     margin-bottom: 10px;
 }
 
+/* --- ESPACIO AÑADIDO DEBAJO DE LA SECCIÓN CLIENTES --- */
+#clientes {
+    padding-bottom: 80px; /* <--- PUEDES AJUSTAR ESTE VALOR */
+}
 
 /* ======== NUEVA SECCIÓN: MISIÓN Y VISIÓN ======== */
 .mision-vision-grid {
@@ -191,7 +192,7 @@ body {
 .mision-vision-grid h3 {
     margin-top: 0;
     color: var(--primary-blue);
-    margin-bottom: 0; /* <--- ESPACIO REDUCIDO AL MÍNIMO */
+    margin-bottom: 0;
 }
 
 /* ======== SERVICIOS (AJUSTADO A 4 COLUMNAS) ======== */
